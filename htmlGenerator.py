@@ -1,6 +1,8 @@
 import json
 import re
-from xml_generator import XMLGenerator
+from xmlgenerator import XMLGenerator
+
+
 class HTMLGenerator:
     def __init__(self, data_file):
         self.data_file = data_file
@@ -57,6 +59,7 @@ class HTMLGenerator:
         with open(self.data_file, 'w') as f:
             json.dump(data, f)
 
+
 # Example usage with user interface
 data_file = 'data.json'
 output_file = 'output.html'
@@ -66,10 +69,14 @@ html_generator.read_json()
 html_generator.generate_html(output_file)
 
 # User interface for adding new entry
-print("Add New Entry")
-component = input("Component Name: ")
-branch = input("Branch: ")
-revision = input("Revision: ")
 
-html_generator.add_entry_to_json(component, branch, revision)
-html_generator.generate_html(output_file)
+
+if input("Do you want to add a new entry? (Y/N): ").lower() == 'y':
+    print("Add New Entry")
+    component = input("Component Name: ")
+    branch = input("Branch: ")
+    html_generator.generate_html(output_file)
+
+
+xml_generator = XMLGenerator()
+xml_generator.generate_xml(html_generator.data, "output.xml")

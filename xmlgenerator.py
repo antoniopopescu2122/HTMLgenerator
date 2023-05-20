@@ -1,22 +1,25 @@
-import json
 import xml.etree.ElementTree as ET
+import json
+import xml.dom.minidom
 
 class XMLGenerator:
-    def __init__(self, data_file):
-        self.data_file = data_file
-
-    def generate_xml(self, output_file):
-        with open(self.data_file) as f:
-            data = json.load(f)
-
-        root = ET.Element('Components')
+    def generate_xml(self, data, output_file):
+        root = ET.Element("root")
+        binaries = ET.SubElement(root, "BINARIES")
 
         for component, details in data['BINARIES'].items():
-            component_elem = ET.SubElement(root, 'Component', name=component)
-            branch_elem = ET.SubElement(component_elem, 'Branch')
-            branch_elem.text = details['branch']
-            revision_elem = ET.SubElement(component_elem, 'Revision')
-            revision_elem.text = details['revision']
+            binary = ET.SubElement(binaries, "binary")
+            binary.set("name", component)
 
-        tree = ET.ElementTree(root)
-        tree.write(output_file, encoding='utf-8', xml_declaration=True)
+            branch = ET.SubElement(binary, "branch")
+            branch.text = details['branch']
+
+            revision = ET.SubElement(binary, "revision")
+            revision.text = details['revision']
+
+        xml_string = ET.tostring(root, encoding="utf-8")
+        xml_dom = xml.dom.minidom.parseString(xml_string)
+        formatted_xml = xml_dom.toprettyxml(indent="  ")
+
+        with open(output_file, "w") as f:
+            f.write(formatted_xml)

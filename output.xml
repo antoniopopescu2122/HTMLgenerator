@@ -1,0 +1,77 @@
+<?xml version="1.0" ?>
+<root>
+  <BINARIES>
+    <binary name="component1">
+      <branch>master</branch>
+      <revision>AAAAAAAAAAAAAAAAA</revision>
+    </binary>
+    <binary name="component2">
+      <branch>master</branch>
+      <revision>08bfe46eb003f9348ed27298d0bdbdda7fa96c69</revision>
+    </binary>
+    <binary name="component3">
+      <branch>master</branch>
+      <revision>99ce27174fcc46fa36e1abdd91d89ccd750b5e55</revision>
+    </binary>
+    <binary name="component4">
+      <branch>master</branch>
+      <revision>e9d86aeb4d8fe483fdf23c53a84774ceafb5235e</revision>
+    </binary>
+    <binary name="component5">
+      <branch>master</branch>
+      <revision>08bfe46eb003f9348ed27298d0bdbdda7fa96c69</revision>
+    </binary>
+    <binary name="component6">
+      <branch>br7</branch>
+      <revision>90</revision>
+    </binary>
+    <binary name="component9">
+      <branch>master</branch>
+      <revision>e9d86aeb4d8fe483fdf23c53a84774ceafb5235e</revision>
+    </binary>
+    <binary name="component7">
+      <branch>master</branch>
+      <revision>08bfe46eb003f9348ed27298d0bdbdda7fa96c69</revision>
+    </binary>
+    <binary name="component8">
+      <branch>master</branch>
+      <revision>99ce27174fcc46fa36e1abdd91d89ccd750b5e55</revision>
+    </binary>
+    <binary name="new_component">
+      <branch>main</branch>
+      <revision>abcdef1234567890</revision>
+    </binary>
+    <binary name="COMPONENT10">
+      <branch>master</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e55</revision>
+    </binary>
+    <binary name="COMPONENT11">
+      <branch>main</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e55</revision>
+    </binary>
+    <binary name="COMPONENT16">
+      <branch>main</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e50</revision>
+    </binary>
+    <binary name="COMPONENT12">
+      <branch>master</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e90</revision>
+    </binary>
+    <binary name="COMPONENT38">
+      <branch>master</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd</revision>
+    </binary>
+    <binary name="COMPONENT89">
+      <branch>master</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e90</revision>
+    </binary>
+    <binary name="COMPONENT88">
+      <branch>MINI</branch>
+      <revision>89</revision>
+    </binary>
+    <binary name="MINI">
+      <branch>X</branch>
+      <revision>X</revision>
+    </binary>
+  </BINARIES>
+</root>
