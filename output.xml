@@ -1,10 +1,6 @@
 <?xml version="1.0" ?>
 <root>
   <BINARIES>
-    <binary name="component1">
-      <branch>master</branch>
-      <revision>AAAAAAAAAAAAAAAAA</revision>
-    </binary>
     <binary name="component2">
       <branch>master</branch>
       <revision>08bfe46eb003f9348ed27298d0bdbdda7fa96c69</revision>
@@ -72,6 +68,14 @@
     <binary name="MINI">
       <branch>X</branch>
       <revision>X</revision>
+    </binary>
+    <binary name="component66">
+      <branch>main</branch>
+      <revision>6667777777777777777777773</revision>
+    </binary>
+    <binary name="COMPONENTBETA">
+      <branch>main</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5ew9</revision>
     </binary>
   </BINARIES>
 </root>
