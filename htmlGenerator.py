@@ -90,20 +90,21 @@ class HTMLGenerator:
             file.write(
                 '<tr style="background-color:lime;"><th>Name</th><th>Branch</th><th>Revision</th><th>Status</th><th>branch@revision</th></tr>')
             for component, details in self.data['BINARIES'].items():
-                file.write('<tr>')
-                file.write('<td style="text-transform:uppercase;">' + component + '</td>')
-                file.write('<td>' + details['branch'] + '</td>')
+
                 if re.match(self.pattern, details['revision']):
+                    file.write('<tr>')
+                    file.write('<td style="text-transform:uppercase;">' + component + '</td>')
+                    file.write('<td>' + details['branch'] + '</td>')
                     file.write('<td><a href="https://github.com/q/commit:' + details['revision'] + '" target="_blank">' +
                             details['revision'] + '</a></td>')
+                    file.write('<td>Aligned</td>')
                 else:
-                    file.write('<td>ERR</td>')
-                file.write('<td>Aligned</td>')
+                    print("component "+component+" doesn't match the format.")
+
                 if re.match(self.pattern, details['revision']):
                     file.write('<td><a target="_blank" href="https://github.com/q/commit:' + details['revision'] + '"> ' +
                             details['branch'] + '@' + details['revision'] + '</a></td>')
-                else:
-                    file.write('<td>ERR</td>')
+
                 file.write('</tr>')
             file.write('</table>')
             file.write(html)

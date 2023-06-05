@@ -1,14 +1,6 @@
 <?xml version="1.0" ?>
 <root>
   <BINARIES>
-    <binary name="component3">
-      <branch>master</branch>
-      <revision>99ce27174fcc46fa36e1abdd91d89ccd750b5e55</revision>
-    </binary>
-    <binary name="component4">
-      <branch>master</branch>
-      <revision>e9d86aeb4d8fe483fdf23c53a84774ceafb5235e</revision>
-    </binary>
     <binary name="component5">
       <branch>master</branch>
       <revision>08bfe46eb003f9348ed27298d0bdbdda7fa96c69</revision>
@@ -68,6 +60,26 @@
     <binary name="componentX">
       <branch>alice</branch>
       <revision>123</revision>
+    </binary>
+    <binary name="componentanew">
+      <branch>master</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e90</revision>
+    </binary>
+    <binary name="componentabeta">
+      <branch>main</branch>
+      <revision>123455667a78787887</revision>
+    </binary>
+    <binary name="COMPONENT44555">
+      <branch>master</branch>
+      <revision>99fe27174fee46fa36e1afee91d89ccd750b5e55</revision>
+    </binary>
+    <binary name="componenttester">
+      <branch>master</branch>
+      <revision>08bfe46eb003f9348ed27298d0bdbdda7fa96c69</revision>
+    </binary>
+    <binary name="entryx">
+      <branch>master</branch>
+      <revision>xxx</revision>
     </binary>
   </BINARIES>
 </root>
